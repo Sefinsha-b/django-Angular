@@ -1,0 +1,30 @@
+<router-outlet></router-outlet>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<div class="container login-container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          Login
+        </div>
+        <div class="card-body">
+          <form (ngSubmit)="makePostRequest()">
+            <div class="form-group">
+              <label for="username">title:</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter your username"
+                [(ngModel)]="title" name="title">
+            </div>
+            <div class="form-group">
+              <label for="password">description:</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password"
+                [(ngModel)]="description" name="description">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
